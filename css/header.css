@@ -1,0 +1,13 @@
+.header{
+    & div{
+        width: 319px;
+        gap: 8px;
+        /* border: 1px solid red; */
+        & p{
+            color: var(--content-tertiary);
+        }
+        & h1{
+            color: var(--content-primary);
+        }
+    }
+}

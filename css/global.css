@@ -1,0 +1,155 @@
+:root {
+  /* Content Colors */
+  --content-primary: #ffffff;
+  --content-secondary: #c7c9cc;
+  --content-tertiary: #d9d9d9;
+  --content-brand: #c58de7;
+  --color-inverse: #030203;
+
+  /* Background Colors */
+  --background-primary: #020202;
+  --background-secondary: #111012;
+  --background-tertiary: #24222e;
+  --background-brand: #c58de7;
+  --background-gray: #3d3d3d;
+
+  /* Accent Colors */
+  --accent-pink: #d586e0;
+  --accent-blue: #91a1fa;
+  --accent-green: #77C0A;
+  --accent-lime: #d1dc97;
+  --accent-red: #e9a9b3;
+
+  /* Gradients */
+  --gradient-border: linear-gradient(
+    to right,
+    #77c0af 0%,
+    #d1dc97 14.84%,
+    #d586e0 65.79%,
+    #91a1fa 84.58%
+  );
+
+  --gradient-background: linear-gradient(to right, #d586e0 0%, #91a1fa 98.93%);
+  --gradient-content: linear-gradient(to right, #c7c9cc 0%, #3d3d3d 100%);
+}
+
+/* --- Tipografia --- */
+
+/* Estilos de Display (Sora) */
+.display-large {
+  font-family: "Sora", sans-serif;
+  font-size: 72px;
+  line-height: 130%;
+  font-weight: 800; /* ExtraBold */
+  text-transform: uppercase;
+}
+
+.display-medium {
+  font-family: "Sora", sans-serif;
+  font-size: 40px;
+  line-height: 130%;
+  font-weight: 800; /* ExtraBold */
+  text-transform: uppercase;
+}
+
+.display-small {
+  font-family: "Sora", sans-serif;
+  font-size: 32px;
+  line-height: 130%;
+  font-weight: 700; /* Bold */
+  text-transform: uppercase;
+}
+
+.sora-small {
+  font-family: "Sora", sans-serif;
+  font-size: 24px;
+  line-height: 130%;
+  font-weight: 700; /* Bold */
+  text-transform: uppercase;
+}
+
+/* Estilo Overline (Roboto Mono) */
+.overline {
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 700; /* Bold */
+  text-transform: uppercase;
+}
+
+/* Estilos de Parágrafo (Roboto Flex) */
+.paragraph-large {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 500; /* Medium */
+}
+
+.paragraph-medium {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 500; /* Medium */
+}
+
+.paragraph-small {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 12px;
+  line-height: 150%;
+  font-weight: 500; /* Medium */
+}
+
+/* Estilos de Label (Roboto Flex) */
+.label-medium {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 20px;
+  line-height: 150%;
+  font-weight: 700; /* Bold */
+}
+
+.label-small {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 700; /* Bold */
+}
+
+.label-large {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 20px;
+  line-height: 150%;
+  font-weight: 700; /* Bold */
+  text-transform: uppercase;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-primary);
+}
+
+.center {
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.contaner {
+  width: 390px;
+}
+
+.absolute {
+  position: absolute;
+  z-index: -1;
+}

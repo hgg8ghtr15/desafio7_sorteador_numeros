@@ -1,0 +1,10 @@
+.logo{
+    align-items: center;
+    justify-items: center;
+    padding-block: 44px;
+    color: var(--content-primary);
+    & div{
+        align-items: center;
+        gap: 11px;
+    }
+}
