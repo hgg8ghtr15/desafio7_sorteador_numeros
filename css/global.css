@@ -134,6 +134,7 @@ body {
 
 .center {
   margin: auto;
+
 }
 
 .flex {
@@ -152,4 +153,11 @@ body {
 .absolute {
   position: absolute;
   z-index: -1;
+}
+
+@media (width >= 1366px) {
+  .center {
+    margin-left: 120px;
+  }
+  
 }

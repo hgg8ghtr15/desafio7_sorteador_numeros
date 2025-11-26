@@ -3,8 +3,21 @@
     justify-items: center;
     padding-block: 44px;
     color: var(--content-primary);
+    margin: auto;
     & div{
+        justify-content: center;
         align-items: center;
         gap: 11px;
     }
+}
+
+@media (width >= 1366px){
+    .logo{
+        padding: 0;
+        margin: 76px 0px 86px 120px;
+        justify-items: left;
+        & div{
+        }
+    }
+
 }

@@ -15,59 +15,91 @@
     />
   </head>
   <body>
-    <img src="css/image/Shapes.png" alt="" class="absolute" />
-
-    <div class="contaner center logo sora-small">
-      <div class="flex center">
+    <img src="css/image/Shapes.png" alt="" class="absolute center" />
+    <div class="contaner logo sora-small">
+      <div class="flex">
         <img src="css/icon/logo.png" alt="" />
         <strong>Numbers</strong>
       </div>
     </div>
 
-    <header class="contaner center header">
-      <div class="center">
-        <p class="overline">Online - gratuito</p>
-        <h1 class="display-medium">Sorteador de números</h1>
-      </div>
-    </header>
+    <div class="contaner center flex-col">
 
-    <main class="contaner center header main flex-col">
-      <div class="title-form center">
-        <p class="label-large">Quero sortear:</p>
-        <p class="paragraph-medium">
-          Defina o intervalo e a quantidade de números, clique em "Sortear" e
-          veja os resultados na tela. É rápido e fácil!
-        </p>
-      </div>
+      <header class="header flex">
+        <div class="">
+          <p class="overline">Online - gratuito</p>
+          <h1 class="display-medium">Sorteador de números</h1>
+        </div>
+      </header>
 
-      <form action="" class="center flex-col">
-        <div class="center flex">
-          <div class="numero flex-col">
-            <label for="" class="label-medium">Números</label>
-            <input type="text" class="display-small" />
+      <main class="header main flex-col">
+        <div class="title-form">
+          <p class="label-large">Quero sortear:</p>
+          <p class="paragraph-medium">
+            Defina o intervalo e a quantidade de números, clique em "Sortear" e
+            veja os resultados na tela. É rápido e fácil!
+          </p>
+        </div>
+
+        <form action="" class="flex-col">
+          <div class="flex">
+            <div class="numero flex-col">
+              <label for="" class="label-medium">Números</label>
+              <input type="text" class="display-small" />
+            </div>
+            <div class="numero flex-col">
+              <label for="" class="label-medium">De</label>
+              <input type="text" class="display-small" />
+            </div>
+            <div class="numero flex-col">
+              <label for="" class="label-medium">Até</label>
+              <input type="text" class="display-small" />
+            </div>
           </div>
-          <div class="numero flex-col">
-            <label for="" class="label-medium">De</label>
-            <input type="text" class="display-small" />
+          <div>
+            <label for="">
+              <input type="checkbox" name="" id="" />
+              <span class="paragraph-medium">Não repetir número</span>
+            </label>
           </div>
-          <div class="numero flex-col">
-            <label for="" class="label-medium">Até</label>
-            <input type="text" class="display-small" />
+        </form>
+
+        <div class="button">
+          <button class="label-medium">Sortear</button>
+        </div>
+      </main>
+
+      <footer class="footer flex ">
+        <div class="questions flex-col">
+          <div class="flex question">
+            <img src="css/icon/question.png" alt="" />
+            <div class="texto flex-col">
+              <h3 class="paragraph-medium">
+                Como funciona o sorteador de números?
+              </h3>
+              <p class="paragraph-small">
+                O sorteador utiliza um algoritmo de geração aleatória para criar
+                números dentro do intervalo especificado pelo usuário.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex question">
+            <img src="css/icon/question.png" alt="" />
+            <div class="texto flex-col">
+              <h3 class="paragraph-medium">
+                Posso escolher o intervalo dos números?
+              </h3>
+              <p class="paragraph-small">
+                Sim, você pode definir os valores mínimo e máximo para o
+                intervalo dos números sorteados.
+              </p>
+            </div>
           </div>
         </div>
-        <div>
-          <label for="">
-            <input type="checkbox" name="" id="" />
-            <span class="paragraph-medium">Não repetir número</span>
-          </label>
-        </div>
-      </form>
+      </footer>
+    </div>
 
-      <div class="button center">
-        <button class="label-medium">Sortear</button>
-      </div>
-
-    </main>
     <script src="script.js"></script>
   </body>
 </html>

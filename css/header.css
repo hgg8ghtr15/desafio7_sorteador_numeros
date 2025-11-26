@@ -1,4 +1,6 @@
 .header{
+    align-items: center;
+    justify-content: center;
     & div{
         width: 319px;
         gap: 8px;
@@ -10,4 +12,8 @@
             color: var(--content-primary);
         }
     }
+}
+
+@media (width >= 1366px){
+
 }
