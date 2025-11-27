@@ -1,19 +1,28 @@
-.header{
+.page-header {
+  margin: 2.75rem 6.8125rem;
+  /* border: 1px solid red; */
+  color: white;
+
+  & .logo-container {
+    width: 10.75rem;
+    /* border: 1px solid aqua; */
     align-items: center;
+    justify-items: center;
     justify-content: center;
-    & div{
-        width: 319px;
-        gap: 8px;
-        /* border: 1px solid red; */
-        & p{
-            color: var(--content-tertiary);
-        }
-        & h1{
-            color: var(--content-primary);
-        }
-    }
+    gap: 0.6875rem;
+
+    font-family: "Sora", sans-serif;
+    font-size: 24px;
+    line-height: 130%;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
 }
 
-@media (width >= 1366px){
-
+@media (width >= 1366px) {
+  .page-header {
+    margin: 4.75rem 7.5rem;
+    & .logo-container {
+    }
+  }
 }

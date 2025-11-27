@@ -2,7 +2,7 @@
   /* Content Colors */
   --content-primary: #ffffff;
   --content-secondary: #c7c9cc;
-  --content-tertiary: #d9d9d9;
+  --content-tertiary: #24222E;
   --content-brand: #c58de7;
   --color-inverse: #030203;
 
@@ -36,6 +36,7 @@
 /* --- Tipografia --- */
 
 /* Estilos de Display (Sora) */
+
 .display-large {
   font-family: "Sora", sans-serif;
   font-size: 72px;
@@ -130,11 +131,11 @@
 
 body {
   background-color: var(--background-primary);
+  color: #fff;
 }
 
 .center {
   margin: auto;
-
 }
 
 .flex {
@@ -145,7 +146,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+/* 
 .contaner {
   width: 390px;
 }
@@ -153,11 +154,27 @@ body {
 .absolute {
   position: absolute;
   z-index: -1;
+} */
+
+.app-container {
+  padding-inline: 35px;
+  flex-direction: column;
+}
+
+.hidden{
+  display: none;
 }
 
 @media (width >= 1366px) {
   .center {
     margin-left: 120px;
   }
-  
+
+  .app-container {
+    width: 1440px;
+    padding-inline: 8.375rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6.75rem;
+  }
 }

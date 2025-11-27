@@ -1,0 +1,173 @@
+.area-interacao {
+  padding-top: 2.625rem;
+  border: 1px solid red;
+  & .form-card-content {
+    flex-direction: column;
+    gap: 40px;
+    & .card-header {
+      width: 19.9375rem;
+      flex-direction: column;
+
+      & h2 {
+        font-family: "Roboto Flex", sans-serif;
+        font-size: 20px;
+        line-height: 150%;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+      & p {
+        font-family: "Roboto Flex", sans-serif;
+        font-size: 14px;
+        line-height: 150%;
+        font-weight: 400;
+        /* text-transform: uppercase; */
+      }
+    }
+
+    & .inputs-row {
+      width: 319px;
+      /* border: 1px solid wheat; */
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 12px;
+
+      & .input-group {
+        width: 86px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+
+        & label {
+          width: 100%;
+          text-align: center;
+          font-family: "Roboto Flex", sans-serif;
+          font-size: 16px;
+          line-height: 150%;
+          font-weight: 800;
+          text-transform: uppercase;
+        }
+
+        & input[type="number"] {
+          width: 100%;
+          border-radius: 8px;
+          border: 0px;
+          background-color: var(--background-secondary);
+          color: var(--content-primary);
+          text-align: center;
+          font-family: "sora", sans-serif;
+          font-size: 32px;
+          line-height: 150%;
+          font-weight: 800;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    /* Container principal para alinhar o botão e o texto */
+    & .toggle-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 8px; /* Espaço entre o botão e o texto */
+      background-color: #000; /* Fundo preto para visualizar melhor */
+      padding: 20px;
+      /* O texto "Não repetir número" */
+      & .toggle-text {
+        color: white;
+        font-family: "Roboto Flex", sans-serif;
+        font-size: 14px;
+        cursor: pointer; /* Mãozinha ao passar o mouse */
+      }
+
+      /* --- CONFIGURAÇÃO DO BOTÃO (SWITCH) --- */
+
+      /* O container do botão (define o tamanho) */
+      & .switch {
+        position: relative;
+        display: inline-block;
+        width: 30px;
+        height: 20px;
+      }
+
+      /* Esconde o checkbox padrão do HTML */
+      & .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      /* O fundo do botão (o trilho) */
+      & .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #333; /* Cor cinza escuro quando desligado */
+        transition: 0.4s; /* Velocidade da animação */
+        border-radius: 34px; /* Deixa bem redondo */
+      }
+
+      /* A bolinha branca */
+      & .slider::before {
+        position: absolute;
+        content: "";
+        height: 14px;
+        width: 14px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        transition: 0.4s; /* Velocidade da bolinha */
+        border-radius: 50%;
+      }
+
+      /* --- ESTADO ATIVO (QUANDO CHECKED) --- */
+
+      /* Muda a cor do fundo para o degradê Roxo/Azul */
+      & input:checked + .slider {
+        background: linear-gradient(90deg, #d88ae6 0%, #9aa6f8 100%);
+      }
+
+      /* Move a bolinha para a direita */
+      & input:checked + .slider::before {
+        transform: translateX(10px);
+      }
+    }
+
+    & .btn-primary {
+      width: 100%;
+      padding: 16px;
+      gap: 8px;
+      border-radius: 8px;
+      border: 0px;
+
+      justify-content: center;
+      text-align: center;
+
+      background-color: var(--content-tertiary);
+      color: #fff;
+
+      font-family: "Roboto Flex", sans-serif;
+      font-size: 16px;
+      line-height: 150%;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+  }
+
+
+
+
+}
+
+@media (width >= 1366px) {
+  .area-interacao {
+    width: 482px;
+    height: 344px;
+    & .form-card-content {
+      & .card-header {
+        /* display: none; */
+      }
+    }
+  }
+}

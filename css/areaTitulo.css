@@ -1,0 +1,31 @@
+.area-titulo {
+  width: 19.9375rem;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  & .badge {
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  & .main-title{
+    font-family: "Sora", sans-serif;
+    font-size: 40px;
+    line-height: 130%;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+}
+
+@media (width >= 1366px) {
+  .area-titulo {
+    width: 32.75rem;
+    gap: 0.75rem;
+
+    & .main-title{
+        font-size: 72px;
+    }
+  }
+}
