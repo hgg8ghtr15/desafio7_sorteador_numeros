@@ -2,7 +2,7 @@
   /* Content Colors */
   --content-primary: #ffffff;
   --content-secondary: #c7c9cc;
-  --content-tertiary: #24222E;
+  --content-tertiary: #24222e;
   --content-brand: #c58de7;
   --color-inverse: #030203;
 
@@ -156,12 +156,52 @@ body {
   z-index: -1;
 } */
 
+& .btn-primary {
+  width: 100%;
+  padding: 16px;
+  gap: 8px;
+  border-radius: 8px;
+  border: 0px;
+
+  justify-content: center;
+  text-align: center;
+
+  background-color: var(--content-tertiary);
+  color: #fff;
+
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+& .btn-secondary {
+  width: 100%;
+  padding: 16px;
+  gap: 8px;
+  border-radius: 8px;
+  border: 0px;
+
+  justify-content: center;
+  text-align: center;
+
+  background-color: var(--content-tertiary);
+  color: #fff;
+
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
 .app-container {
   padding-inline: 35px;
   flex-direction: column;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 

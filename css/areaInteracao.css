@@ -1,23 +1,24 @@
 .area-interacao {
   padding-top: 2.625rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+
   & .form-card-content {
     flex-direction: column;
-    gap: 40px;
+    gap: 2.5rem;
     & .card-header {
       width: 19.9375rem;
       flex-direction: column;
 
       & h2 {
         font-family: "Roboto Flex", sans-serif;
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 150%;
         font-weight: 800;
         text-transform: uppercase;
       }
       & p {
         font-family: "Roboto Flex", sans-serif;
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 150%;
         font-weight: 400;
         /* text-transform: uppercase; */
@@ -25,23 +26,23 @@
     }
 
     & .inputs-row {
-      width: 319px;
+      width: 19.9375rem;
       /* border: 1px solid wheat; */
       flex-direction: row;
       justify-content: space-between;
-      gap: 12px;
+      gap: 0.75rem;
 
       & .input-group {
-        width: 86px;
+        width: 85.375rem;
         flex-direction: column;
         justify-content: center;
-        gap: 8px;
+        gap: 0.5rem;
 
         & label {
           width: 100%;
           text-align: center;
           font-family: "Roboto Flex", sans-serif;
-          font-size: 16px;
+          font-size: 1rem;
           line-height: 150%;
           font-weight: 800;
           text-transform: uppercase;
@@ -49,13 +50,13 @@
 
         & input[type="number"] {
           width: 100%;
-          border-radius: 8px;
+          border-radius: 0.5rem;
           border: 0px;
           background-color: var(--background-secondary);
           color: var(--content-primary);
           text-align: center;
           font-family: "sora", sans-serif;
-          font-size: 32px;
+          font-size: 2rem;
           line-height: 150%;
           font-weight: 800;
           text-transform: uppercase;
@@ -67,14 +68,14 @@
     & .toggle-wrapper {
       display: flex;
       align-items: center;
-      gap: 8px; /* Espaço entre o botão e o texto */
+      gap: 0.5rem; /* Espaço entre o botão e o texto */
       background-color: #000; /* Fundo preto para visualizar melhor */
-      padding: 20px;
+      padding: 1.25rem;
       /* O texto "Não repetir número" */
       & .toggle-text {
         color: white;
         font-family: "Roboto Flex", sans-serif;
-        font-size: 14px;
+        font-size: 0.875rem;
         cursor: pointer; /* Mãozinha ao passar o mouse */
       }
 
@@ -84,8 +85,8 @@
       & .switch {
         position: relative;
         display: inline-block;
-        width: 30px;
-        height: 20px;
+        width: 1.875rem;
+        height: 1.25rem;
       }
 
       /* Esconde o checkbox padrão do HTML */
@@ -133,41 +134,55 @@
         transform: translateX(10px);
       }
     }
-
-    & .btn-primary {
-      width: 100%;
-      padding: 16px;
-      gap: 8px;
-      border-radius: 8px;
-      border: 0px;
-
-      justify-content: center;
-      text-align: center;
-
-      background-color: var(--content-tertiary);
-      color: #fff;
-
-      font-family: "Roboto Flex", sans-serif;
-      font-size: 16px;
-      line-height: 150%;
-      font-weight: 800;
-      text-transform: uppercase;
-    }
   }
 
+  & .card-content {
+    /* border: 1px solid red; */
+    flex-direction: column;
+    width: 19.9375rem;
+    text-align: center;
+    gap: 2.5rem;
 
+    & .card-header {
+      flex-direction: column;
+      gap: 0.25rem;
 
+      & h2{
+        font-family: "Roboto Mono", sans-serif;
+        font-size: 1.125rem;
+        line-height: 150%;
+        font-weight: 400;
+      }
+      & .result-label{
+        font-family: "Roboto Mono", sans-serif;
+        font-size: 1rem;
+        line-height: 150%;
+        font-weight: 800;
+      }
+    }
 
+    & .result-display {
+      font-family: "Roboto Mono", sans-serif;
+      font-size: 3rem;
+      line-height: 150%;
+      font-weight: 800;
+      color: var(--content-brand);
+    }
+  }
 }
 
 @media (width >= 1366px) {
   .area-interacao {
-    width: 482px;
-    height: 344px;
+    width: 30.125rem;
+    height: 21.5rem;
     & .form-card-content {
       & .card-header {
-        /* display: none; */
+        width: 100%;
       }
+    }
+
+    & .card-content {
+      width: 30.125rem;
     }
   }
 }

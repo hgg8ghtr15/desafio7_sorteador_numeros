@@ -1,0 +1,24 @@
+& .area-faq {
+  width: 319px;
+  margin: 90px 0 44px -0px;
+  flex-direction: column;
+  gap: 36px;
+
+  & .faq-item {
+    gap: 0.5rem;
+
+    & h3 {
+      font-family: "Roboto Flex", sans-serif;
+      font-size: 0.875rem;
+      line-height: 150%;
+      font-weight: 300;
+      color: var(--content-brand);
+    }
+  }
+}
+
+@media (width >= 1366px) {
+  .area-faq {
+    margin: -175px 0 44px -0px;
+  }
+}
