@@ -48,7 +48,7 @@
           text-transform: uppercase;
         }
 
-        & input[type="number"] {
+        & input[type="text"] {
           width: 100%;
           border-radius: 0.5rem;
           border: 0px;
@@ -162,11 +162,20 @@
     }
 
     & .result-display {
+      flex-wrap: wrap;
+      gap:8px;
+      justify-content: center;
       font-family: "Roboto Mono", sans-serif;
       font-size: 3rem;
       line-height: 150%;
       font-weight: 800;
       color: var(--content-brand);
+
+      & .number-ball{
+        padding: 10px;
+        background-color: var( --background-secondary);
+        border-radius: 0.5rem;
+      }
     }
   }
 }

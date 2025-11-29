@@ -52,17 +52,17 @@
           <div class="inputs-row flex">
             <div class="input-group flex">
               <label for="quantidade">NÚMEROS</label>
-              <input type="number" id="quantidade" value="2" min="1" />
+              <input type="text" id="quantidade" value="1" min="1" />
             </div>
 
             <div class="input-group flex">
               <label for="minimo">DE</label>
-              <input type="number" id="minimo" value="1" />
+              <input type="text" id="minimo" value="1" />
             </div>
 
             <div class="input-group flex">
               <label for="maximo">ATÉ</label>
-              <input type="number" id="maximo" value="100" />
+              <input type="text" id="maximo" value="100" />
             </div>
           </div>
 
@@ -81,7 +81,7 @@
           <button
             type="button"
             class="btn-primary flex"
-            onclick="mostrarResultado()"
+            id="buttonSortear"
           >
             SORTEAR
             <!-- <span class="icon-arrow">→</span> -->
@@ -97,17 +97,17 @@
             <p class="result-label">1º RESULTADO</p>
           </header>
 
-          <div class="result-display">
+          <div class="result-display flex">
             <!-- Números gerados (exemplo estático) -->
-            <span class="number-ball">23</span>
-            <span class="number-ball">12</span>
+            <!-- <span class="number-ball">23</span>
+            <span class="number-ball">12</span> -->
           </div>
 
           <!-- Botão Secundário -->
           <button
             type="button"
             class="btn-secondary flex"
-            onclick="voltarFormulario()"
+            id="buttonSortearNovamente"
           >
             SORTEAR NOVAMENTE
             <img src="css/icon/seta_2.png" alt="" />

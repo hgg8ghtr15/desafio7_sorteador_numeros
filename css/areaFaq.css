@@ -11,7 +11,7 @@
       font-family: "Roboto Flex", sans-serif;
       font-size: 0.875rem;
       line-height: 150%;
-      font-weight: 300;
+      font-weight: 400;
       color: var(--content-brand);
     }
   }
@@ -19,6 +19,7 @@
 
 @media (width >= 1366px) {
   .area-faq {
+    width: 450px;
     margin: -175px 0 44px -0px;
   }
 }
